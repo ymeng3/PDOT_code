@@ -1,0 +1,42 @@
+sbatch: Verify job submission ...
+sbatch: Using a shared partition ...
+sbatch: Partition: caslake
+sbatch: QOS-Flag: caslake
+sbatch: Account: pi-haihaolu
+sbatch: Verification: ***PASSED***
+Submitted batch job 11447068
+sbatch: Verify job submission ...
+sbatch: Using a shared partition ...
+sbatch: Partition: caslake
+sbatch: QOS-Flag: caslake
+sbatch: Account: pi-haihaolu
+sbatch: Verification: ***PASSED***
+Submitted batch job 11447069
+sbatch: Verify job submission ...
+sbatch: Using a shared partition ...
+sbatch: Partition: caslake
+sbatch: QOS-Flag: caslake
+sbatch: Account: pi-haihaolu
+sbatch: Verification: ***PASSED***
+Submitted batch job 11447070
+sbatch: Verify job submission ...
+sbatch: Using a shared partition ...
+sbatch: Partition: caslake
+sbatch: QOS-Flag: caslake
+sbatch: Account: pi-haihaolu
+sbatch: Verification: ***PASSED***
+Submitted batch job 11447071
+sbatch: Verify job submission ...
+sbatch: Using a shared partition ...
+sbatch: Partition: caslake
+sbatch: QOS-Flag: caslake
+sbatch: Account: pi-haihaolu
+sbatch: Verification: ***PASSED***
+Submitted batch job 11447072
+sbatch: Verify job submission ...
+sbatch: Using a shared partition ...
+sbatch: Partition: caslake
+sbatch: QOS-Flag: caslake
+sbatch: Account: pi-haihaolu
+sbatch: Verification: ***PASSED***
+Submitted batch job 11447073

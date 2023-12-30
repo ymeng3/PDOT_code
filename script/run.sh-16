@@ -1,0 +1,11 @@
+#!/bin/bash
+#SBATCH --job-name=pdot_dataset1
+#SBATCH --output=/home/ymeng3/result/result16.txt
+#SBATCH --error=/home/ymeng3/result/error16.txt
+#SBATCH --cpus-per-task=16
+#SBATCH --mem=16G
+#SBATCH --account=pi-haihaolu
+
+# pdot1 dataset1 100,300,1000 log 
+module load julia  # Load Julia module, if available 
+julia /home/ymeng3/experiments/code/pdot_code1/test/dataset1.jl
