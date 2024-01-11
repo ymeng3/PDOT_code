@@ -70,11 +70,6 @@ function optimize(
         step_size_dual,
     )
 
-    buffer_feas = BufferFeas(
-        zeros(m,n),
-        zeros(m),
-        zeros(n),
-    )
 
     # list of all kkt object throughout runtime 
     kkt_stats = KKTResidual[]
@@ -184,19 +179,19 @@ function optimize(
     println("#####################################")
 
 
-    # add rounding before return 
-    buffer = Buffer(
-        zeros(m,n),
-        zeros(m),
-        zeros(n),
-    )
-    rounding!(problem, solver_state, buffer)
-    # Update the solver_state with the rounded solution
-    solver_state.current_primal_solution .= buffer.solution
-    round_kkt = compute_kkt_residual(problem, solver_state, buffer, ot_cache)
-    push!(kkt_stats, round_kkt)
-    push!(kkt_stats_res, round_kkt.kkt_residual)
-    kkt_output = kkt_stats_res
+    # # add rounding before return 
+    # buffer = BufferFeas(
+    #     zeros(m,n),
+    #     zeros(m),
+    #     zeros(n),
+    # )
+    # rounding!(problem, solver_state, buffer)
+    # # Update the solver_state with the rounded solution
+    # solver_state.current_primal_solution .= buffer.solution
+    # round_kkt = compute_kkt_residual(problem, solver_state, buffer, ot_cache)
+    # push!(kkt_stats, round_kkt)
+    # push!(kkt_stats_res, round_kkt.kkt_residual)
+    # kkt_output = kkt_stats_res
 
     return kkt_output, iter, time_basic, time_full, converged, solver_state.current_primal_solution, kkt_stats[end].primal_residual, kkt_stats[end].dual_residual, kkt_stats[end].primal_dual_gap
 end
